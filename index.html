@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Express Food DH Meal | Livraison à Bukavu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Express Food DH Meal - Livraison rapide de nourriture à Bukavu">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">
+      <img src="images/logo.PNG" alt="Logo">
+      <span>Express Food DH Meal</span>
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Accueil</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">À propos</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ACCUEIL / SLIDER -->
+<section id="home" class="hero">
+  <div class="slide active" style="background-image: url('images/slide1.JPG')">
+    <div class="slide-content">
+      <div class="slide-badge reveal">🚀 Service Express</div>
+      <h1 class="slide-title reveal">Livraison rapide à Bukavu</h1>
+      <p class="slide-subtitle reveal">Pizza Burger Fast Food - Commandez en quelques clics</p>
+      <div class="slide-buttons reveal">
+        <a href="#menu" class="slide-btn slide-btn-primary">Commander maintenant</a>
+        <a href="#about" class="slide-btn slide-btn-secondary">Découvrir</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image: url('images/slide2.JPG')">
+    <div class="slide-content">
+      <div class="slide-badge reveal">🍕 Goût Authentique</div>
+      <h1 class="slide-title reveal">Goût authentique à domicile</h1>
+      <p class="slide-subtitle reveal">Express Food DH Meal - Des saveurs qui vous rappellent la maison</p>
+      <div class="slide-buttons reveal">
+        <a href="#menu" class="slide-btn slide-btn-primary">Voir le menu</a>
+        <a href="#contact" class="slide-btn slide-btn-secondary">Nous contacter</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" style="background-image: url('images/slide3.JPG')">
+    <div class="slide-content">
+      <div class="slide-badge reveal">🔥 Chaud Frais Délicieux</div>
+      <h1 class="slide-title reveal">Chaud Frais Délicieux</h1>
+      <p class="slide-subtitle reveal">Commande via WhatsApp - Livraison en 30 minutes</p>
+      <div class="slide-buttons reveal">
+        <a href="https://wa.me/243 974 101 959" class="slide-btn slide-btn-primary whatsapp-slide-btn">
+          <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+        </a>
+        <a href="#menu" class="slide-btn slide-btn-secondary">Explorer le menu</a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Slide Indicators -->
+  <div class="slide-indicators">
+    <span class="indicator active" data-slide="0"></span>
+    <span class="indicator" data-slide="1"></span>
+    <span class="indicator" data-slide="2"></span>
+  </div>
+  
+  <!-- Scroll Down Indicator -->
+  <div class="scroll-indicator">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+    <div class="arrow">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu-section">
+  <div class="container">
+    <h2 class="section-title">Notre Menu</h2>
+
+    <div class="menu-grid">
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food1.JPG" alt="Pizza Spéciale">
+      </div>
+      <div class="menu-card-content">
+        <h3>Pizza Spéciale</h3>
+        <p>Fromage, viande, légumes frais</p>
+        <span class="price">10 $</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food2.JPG" alt="Burger Complet">
+      </div>
+      <div class="menu-card-content">
+        <h3>Burger Complet</h3>
+        <p>Viande, saucisson, frites</p>
+        <span class="price">8 $</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food3.JPG" alt="Rolex">
+      </div>
+      <div class="menu-card-content">
+        <h3>Rolex</h3>
+        <p>chapati, omelette, frites, salade</p>
+        <span class="price">8000 FC</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food4.JPG" alt="Sambusa à Viande">
+      </div>
+      <div class="menu-card-content">
+        <h3>Sambusa à Viande</h3>
+        <p>Sambusa, Viande</p>
+        <span class="price">2000 FC</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food5.JPG" alt="Frites, Saucisson">
+      </div>
+      <div class="menu-card-content">
+        <h3>Frites, Saucisson</h3>
+        <p>frites, saucisson</p>
+        <span class="price">7000 FC</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food6.JPG" alt="Saucisson">
+      </div>
+      <div class="menu-card-content">
+        <h3>Saucisson</h3>
+        <p>saucissons</p>
+        <span class="price">4 $</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food7.JPG" alt="Frites">
+      </div>
+      <div class="menu-card-content">
+        <h3>Frites</h3>
+        <p>frites simple</p>
+        <span class="price">4000 FC</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food8.JPG" alt="Chapati">
+      </div>
+      <div class="menu-card-content">
+        <h3>Chapati</h3>
+        <p>chapati</p>
+        <span class="price">1000 FC</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food9.JPG" alt="Viande">
+      </div>
+      <div class="menu-card-content">
+        <h3>Viande</h3>
+        <p>Viande</p>
+        <span class="price">3000 FC</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+
+    <div class="menu-card reveal">
+      <div class="menu-card-image">
+        <img src="images/food10.JPG" alt="Rolex spécial">
+      </div>
+      <div class="menu-card-content">
+        <h3>Rolex spécial</h3>
+        <p>Viande, chapati, frites, salade, omelette</p>
+        <span class="price">14000 FC</span>
+        <a class="order-btn" href="https://wa.me/243 974 101 959">Passer commande</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- A PROPOS -->
+<section id="about" class="about-section">
+  <div class="container">
+    <h2 class="section-title">À propos de nous</h2>
+    <p class="section-subtitle reveal">Votre partenaire de confiance pour une livraison rapide et savoureuse</p>
+    
+    <div class="about-content">
+      <div class="about-image reveal">
+        <div class="image-wrapper">
+          <img src="images/2025_12_29_14_57_IMG_1210.JPG" alt="Propriétaire Express Food DH Meal">
+          <div class="image-badge">
+            <i class="fas fa-award"></i>
+            <span>Qualité Garantie</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-text reveal">
+        <div class="about-intro">
+          <h3>Notre Histoire</h3>
+          <p>
+            Express Food DH Meal est un service de livraison basé à Bukavu, né de la passion pour la cuisine authentique et le désir de rendre les bons repas accessibles à tous. Nous proposons des plats frais, rapides et savoureux directement chez vous.
+          </p>
+        </div>
+        
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Équipe Locale</h4>
+              <p>Notre équipe locale connaît parfaitement les goûts de la région et s'engage à vous offrir une expérience culinaire authentique et de qualité.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Livraison Rapide</h4>
+              <p>Que vous soyez chez vous, au bureau ou en déplacement, nous livrons vos plats préférés chauds et dans les délais promis.</p>
+            </div>
+          </div>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Passion Culinaire</h4>
+              <p>Chaque plat est préparé avec amour et attention aux détails pour vous garantir une expérience gustative exceptionnelle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Statistics -->
+    <div class="about-stats reveal">
+      <div class="stat-item">
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-label">Clients Satisfaits</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="1000">0</div>
+        <div class="stat-label">Commandes Livrées</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="30">0</div>
+        <div class="stat-label">Minutes Moyennes</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-label">Plats Disponibles</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-content">
+    <div class="contact-info">
+      <div class="location-card reveal">
+        <img src="images/2025_12_29_15_31_IMG_1229.JPG" alt="Localisation Express Food DH Meal">
+        <h3>📍 Notre Localisation</h3>
+        <p>Bukavu – Sud-Kivu</p>
+      </div>
+
+      <div class="contact-details">
+        <div class="contact-item reveal">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h4>Téléphone</h4>
+            <p>+243 974 101 959</p>
+          </div>
+        </div>
+
+        <div class="contact-item reveal">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>+243 974 101 959</p>
+          </div>
+        </div>
+
+        <div class="contact-item reveal">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h4>Horaires d'ouverture</h4>
+            <p>Lundi - Dimanche: 10h - 22h</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-buttons">
+      <a href="tel:+243 974 101 959" class="call-btn reveal">
+        <i class="fas fa-phone"></i>
+        Appeler maintenant
+      </a>
+      <a href="https://wa.me/243 974 101 959" class="whatsapp-btn reveal">
+        <i class="fab fa-whatsapp"></i>
+        Commander via WhatsApp
+      </a>
+    </div>
+
+    <div class="socials reveal">
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Floating WhatsApp Button -->
+<div class="floating-whatsapp">
+  <a href="https://wa.me/243 974 101 959" title="Commander via WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="images/logo.PNG" alt="Logo">
+      <span>Express Food DH Meal</span>
+    </div>
+
+    <div class="footer-socials">
+      <a href="#" class="social-icon" title="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="#" class="social-icon" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="social-icon" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="social-icon" title="X (Twitter)">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Express Food DH Meal – Tous droits réservés</p>
+  </div>
+</footer>
+
+</body>
+</html>
